@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Server",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "start:dev"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "console": "integratedTerminal",
+            "localRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Test Current File",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "test",
+                "${fileBasenameNoExtension}"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "console": "integratedTerminal",
+            "localRoot": "${workspaceFolder}"
+        }
+    ],
+}
