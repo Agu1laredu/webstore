@@ -17,4 +17,4 @@ RUN yarn install
 COPY . .
 
 EXPOSE 3000
-CMD [ "yarn", "run","start:dev" ]
+CMD [ "npm", "run","start:dev" ]
